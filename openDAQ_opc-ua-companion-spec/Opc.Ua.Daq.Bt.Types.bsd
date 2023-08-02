@@ -1,0 +1,25 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="https://docs.opendaq.io/specifications/opc-ua/daq/bt" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="https://docs.opendaq.io/specifications/opc-ua/daq/bt">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="DaqBaseStructure"/>
+    <opc:StructuredType BaseType="tns:DaqBaseStructure" Name="DaqKeyValuePair">
+        <opc:Documentation>A more general key value pair.</opc:Documentation>
+        <opc:Field TypeName="ua:Variant" Name="Key"/>
+        <opc:Field TypeName="ua:Variant" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqBaseStructure" Name="RationalNumber64">
+        <opc:Field TypeName="opc:Int64" Name="Numerator"/>
+        <opc:Field TypeName="opc:UInt64" Name="Denominator"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqBaseStructure" Name="SelectionEntryStructure">
+        <opc:Documentation>An entry in the SelectionValues of a SelectionVariableType</opc:Documentation>
+        <opc:Field TypeName="opc:Int64" Name="Key"/>
+        <opc:Field TypeName="ua:Variant" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:EUInformation" Name="EUInformationWithQuantity">
+        <opc:Field SourceType="ua:EUInformation" TypeName="opc:CharArray" Name="NamespaceUri"/>
+        <opc:Field SourceType="ua:EUInformation" TypeName="opc:Int32" Name="UnitId"/>
+        <opc:Field SourceType="ua:EUInformation" TypeName="ua:LocalizedText" Name="DisplayName"/>
+        <opc:Field SourceType="ua:EUInformation" TypeName="ua:LocalizedText" Name="Description"/>
+        <opc:Field TypeName="opc:CharArray" Name="Quantity"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>

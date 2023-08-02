@@ -1,0 +1,46 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="https://docs.opendaq.io/specifications/opc-ua/daq/device" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="https://docs.opendaq.io/specifications/opc-ua/daq/bt" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="https://docs.opendaq.io/specifications/opc-ua/daq/device">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="https://docs.opendaq.io/specifications/opc-ua/daq/bt"/>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="DeviceDomainStructure">
+        <opc:Field TypeName="ns1:RationalNumber64" Name="Resolution"/>
+        <opc:Field TypeName="opc:UInt64" Name="TicksSinceOrigin"/>
+        <opc:Field TypeName="opc:CharArray" Name="Origin"/>
+        <opc:Field TypeName="ns1:EUInformationWithQuantity" Name="Unit"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="ErrorDescriptionStructure">
+        <opc:Documentation>ErrorDescriptionStructure represents a complete error description when a parameter-set was rejected.</opc:Documentation>
+        <opc:Field TypeName="opc:CharArray" Name="Path"/>
+        <opc:Field TypeName="tns:ErrorCodeEnumeration" Name="ErrorCode"/>
+        <opc:Field TypeName="opc:Guid" Name="SecondaryCode"/>
+        <opc:Field TypeName="opc:CharArray" Name="Message"/>
+        <opc:Field TypeName="opc:CharArray" Name="PropertyName"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="ErrorCodeEnumeration">
+        <opc:EnumeratedValue Name="Ok" Value="0"/>
+        <opc:EnumeratedValue Name="OkOverridden" Value="1"/>
+        <opc:EnumeratedValue Name="InternalError" Value="2"/>
+        <opc:EnumeratedValue Name="InvalidArgument" Value="3"/>
+        <opc:EnumeratedValue Name="WrongState" Value="4"/>
+        <opc:EnumeratedValue Name="NotFound" Value="5"/>
+        <opc:EnumeratedValue Name="AlreadyExists" Value="6"/>
+        <opc:EnumeratedValue Name="NotImplementedYet" Value="7"/>
+        <opc:EnumeratedValue Name="NotSupported" Value="8"/>
+        <opc:EnumeratedValue Name="ReadOnly" Value="9"/>
+        <opc:EnumeratedValue Name="ResourceUnavailable" Value="10"/>
+        <opc:EnumeratedValue Name="NoPermission" Value="11"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="LEDBehaviourEnumeration">
+        <opc:EnumeratedValue Name="Continously" Value="0"/>
+        <opc:EnumeratedValue Name="Flashing" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SystemLogLevelEnumeration">
+        <opc:EnumeratedValue Name="Emergency" Value="0"/>
+        <opc:EnumeratedValue Name="Alert" Value="1"/>
+        <opc:EnumeratedValue Name="Critical" Value="2"/>
+        <opc:EnumeratedValue Name="Error" Value="3"/>
+        <opc:EnumeratedValue Name="Warning" Value="4"/>
+        <opc:EnumeratedValue Name="Notice" Value="5"/>
+        <opc:EnumeratedValue Name="Info" Value="6"/>
+        <opc:EnumeratedValue Name="Debug" Value="7"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

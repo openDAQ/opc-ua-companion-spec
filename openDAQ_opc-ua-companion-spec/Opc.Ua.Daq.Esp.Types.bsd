@@ -1,0 +1,47 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="https://docs.opendaq.io/specifications/opc-ua/daq/esp" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="https://docs.opendaq.io/specifications/opc-ua/daq/bt" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="https://docs.opendaq.io/specifications/opc-ua/daq/esp">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="https://docs.opendaq.io/specifications/opc-ua/daq/bt"/>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="IPv4AddressStructure">
+        <opc:Field TypeName="opc:CharArray" Name="Address"/>
+        <opc:Field TypeName="opc:CharArray" Name="Netmask"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="IPv6AddressStructure">
+        <opc:Field TypeName="opc:CharArray" Name="Address"/>
+        <opc:Field TypeName="opc:UInt32" Name="Prefix"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="PtpConfigurationStructure">
+        <opc:Field TypeName="tns:PtpClockTypeEnumeration" Name="ClockType"/>
+        <opc:Field TypeName="tns:PtpProtocolEnumeration" Name="TransportProtocol"/>
+        <opc:Field TypeName="tns:PtpStepFlagEnumeration" Name="StepFlag"/>
+        <opc:Field TypeName="opc:Byte" Name="DomainNumber"/>
+        <opc:Field TypeName="opc:Byte" Name="LeapSeconds"/>
+        <opc:Field TypeName="tns:PtpDelayMechanismEnumeration" Name="DelayMechanism"/>
+        <opc:Field TypeName="opc:Byte" Name="Priority1"/>
+        <opc:Field TypeName="opc:Byte" Name="Priority2"/>
+        <opc:Field TypeName="tns:PtpProfileEnumeration" Name="Profiles"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="PtpClockTypeEnumeration">
+        <opc:EnumeratedValue Name="Transparent" Value="0"/>
+        <opc:EnumeratedValue Name="OrdinaryBoundary" Value="1"/>
+        <opc:EnumeratedValue Name="SlaveOnly" Value="2"/>
+        <opc:EnumeratedValue Name="MasterOnly" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="PtpDelayMechanismEnumeration">
+        <opc:EnumeratedValue Name="P2P" Value="0"/>
+        <opc:EnumeratedValue Name="E2E" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="PtpProfileEnumeration">
+        <opc:EnumeratedValue Name="1588" Value="0"/>
+        <opc:EnumeratedValue Name="802_1AS" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="PtpProtocolEnumeration">
+        <opc:EnumeratedValue Name="IEEE802_3" Value="0"/>
+        <opc:EnumeratedValue Name="UDP_IPv4" Value="1"/>
+        <opc:EnumeratedValue Name="UDP_IPv6" Value="2"/>
+        <opc:EnumeratedValue Name="UDP6_Scope" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="PtpStepFlagEnumeration">
+        <opc:EnumeratedValue Name="One" Value="0"/>
+        <opc:EnumeratedValue Name="Two" Value="1"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="https://docs.opendaq.io/specifications/opc-ua/daq/bt/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>https://docs.opendaq.io/specifications/opc-ua/daq/bt</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-07-19T17:15:47Z" Version="3.0.0">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="UInt16">i=5</Alias>
+        <Alias Alias="Int64">i=8</Alias>
+        <Alias Alias="UInt64">i=9</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="ByteString">i=15</Alias>
+        <Alias Alias="Structure">i=22</Alias>
+        <Alias Alias="Number">i=26</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="HasEncoding">i=38</Alias>
+        <Alias Alias="HasDescription">i=39</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="IdType">i=256</Alias>
+        <Alias Alias="NumericRange">i=291</Alias>
+        <Alias Alias="EUInformation">i=887</Alias>
+        <Alias Alias="KeyValuePair">i=14533</Alias>
+        <Alias Alias="SelectionEntryStructure">ns=1;i=3006</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ua:ModelInfo Tool="UaModeler" Hash="GVge7qPy26JRSNf72kKmlQ==" Version="1.6.9"/>
+        </Extension>
+    </Extensions>
+    <UADataType IsAbstract="true" NodeId="ns=1;i=3002" BrowseName="1:DaqBaseStructure">
+        <DisplayName>DaqBaseStructure</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5022</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5021</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=22</Reference>
+        </References>
+        <Definition Name="1:DaqBaseStructure"/>
+    </UADataType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6023" NodeId="ns=1;i=6027" BrowseName="1:DaqBaseStructure">
+        <DisplayName>DaqBaseStructure</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5005</Reference>
+        </References>
+        <Value>
+            <uax:String>DaqBaseStructure</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6028" BrowseName="1:DaqBaseStructure">
+        <DisplayName>DaqBaseStructure</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5021</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='DaqBaseStructure']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType NodeId="ns=1;i=3004" BrowseName="1:DaqKeyValuePair">
+        <DisplayName>DaqKeyValuePair</DisplayName>
+        <Description>A more general key value pair.</Description>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5004</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3002</Reference>
+        </References>
+        <Definition Name="1:DaqKeyValuePair">
+            <Field Name="Key">
+                <Description>Key can be an numeric value or a string.</Description>
+            </Field>
+            <Field Name="Value"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6023" NodeId="ns=1;i=6038" BrowseName="1:DaqKeyValuePair">
+        <DisplayName>DaqKeyValuePair</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5002</Reference>
+        </References>
+        <Value>
+            <uax:String>DaqKeyValuePair</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6039" BrowseName="1:DaqKeyValuePair">
+        <DisplayName>DaqKeyValuePair</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='DaqKeyValuePair']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType NodeId="ns=1;i=3019" BrowseName="1:RationalNumber64">
+        <DisplayName>RationalNumber64</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5030</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5032</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5031</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3002</Reference>
+        </References>
+        <Definition Name="1:RationalNumber64">
+            <Field DataType="Int64" Name="Numerator"/>
+            <Field DataType="UInt64" Name="Denominator"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6023" NodeId="ns=1;i=6033" BrowseName="1:RationalNumber64">
+        <DisplayName>RationalNumber64</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5030</Reference>
+        </References>
+        <Value>
+            <uax:String>RationalNumber64</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6034" BrowseName="1:RationalNumber64">
+        <DisplayName>RationalNumber64</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5031</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='RationalNumber64']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType NodeId="ns=1;i=3006" BrowseName="1:SelectionEntryStructure">
+        <DisplayName>SelectionEntryStructure</DisplayName>
+        <Description>An entry in the SelectionValues of a SelectionVariableType</Description>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5009</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5008</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=3002</Reference>
+        </References>
+        <Definition Name="1:SelectionEntryStructure">
+            <Field DataType="Int64" Name="Key">
+                <Description>The key in the selection. the value of the SelectionVariableType must match one of the keys</Description>
+            </Field>
+            <Field Name="Value">
+                <Description>Value corresponding to the key</Description>
+            </Field>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6023" NodeId="ns=1;i=6043" BrowseName="1:SelectionEntryStructure">
+        <DisplayName>SelectionEntryStructure</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5007</Reference>
+        </References>
+        <Value>
+            <uax:String>SelectionEntryStructure</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6044" BrowseName="1:SelectionEntryStructure">
+        <DisplayName>SelectionEntryStructure</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5008</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='SelectionEntryStructure']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType NodeId="ns=1;i=3005" BrowseName="1:EUInformationWithQuantity">
+        <DisplayName>EUInformationWithQuantity</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5023</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5029</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5027</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=887</Reference>
+        </References>
+        <Definition Name="1:EUInformationWithQuantity">
+            <Field DataType="String" Name="Quantity">
+                <Description>The Physical quantity, e.g "Time" if the unit is "s"</Description>
+            </Field>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6023" NodeId="ns=1;i=6035" BrowseName="1:EUInformationWithQuantity">
+        <DisplayName>EUInformationWithQuantity</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5023</Reference>
+        </References>
+        <Value>
+            <uax:String>EUInformationWithQuantity</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6036" BrowseName="1:EUInformationWithQuantity">
+        <DisplayName>EUInformationWithQuantity</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5027</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='EUInformationWithQuantity']</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="TypeDictionary_BinarySchema" DataType="ByteString" NodeId="ns=1;i=6023" BrowseName="1:TypeDictionary">
+        <DisplayName>TypeDictionary</DisplayName>
+        <Description>Collects the data type descriptions of https://docs.opendaq.io/specifications/opc-ua/daq/bt</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6027</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6038</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6035</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6024</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6033</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6043</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
+        W1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHBzOi8vZG9jcy5vcGVuZGFxLmlvL3NwZWNpZ
+        mljYXRpb25zL29wYy11YS9kYXEvYnQiIERlZmF1bHRCeXRlT3JkZXI9IkxpdHRsZUVuZGlhb
+        iIgeG1sbnM6b3BjPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvQmluYXJ5U2NoZW1hLyIge
+        G1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8iIFRhcmdldE5hbWVzcGFjZ
+        T0iaHR0cHM6Ly9kb2NzLm9wZW5kYXEuaW8vc3BlY2lmaWNhdGlvbnMvb3BjLXVhL2RhcS9id
+        CI+CiA8b3BjOkltcG9ydCBOYW1lc3BhY2U9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQ
+        S8iLz4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9iamVjd
+        CIgTmFtZT0iRGFxQmFzZVN0cnVjdHVyZSIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlV
+        HlwZT0idG5zOkRhcUJhc2VTdHJ1Y3R1cmUiIE5hbWU9IkRhcUtleVZhbHVlUGFpciI+CiAgP
+        G9wYzpEb2N1bWVudGF0aW9uPkEgbW9yZSBnZW5lcmFsIGtleSB2YWx1ZSBwYWlyLjwvb3BjO
+        kRvY3VtZW50YXRpb24+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6VmFyaWFudCIgTmFtZ
+        T0iS2V5Ii8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0idWE6VmFyaWFudCIgTmFtZT0iVmFsd
+        WUiLz4KIDwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlV
+        HlwZT0idG5zOkRhcUJhc2VTdHJ1Y3R1cmUiIE5hbWU9IlJhdGlvbmFsTnVtYmVyNjQiPgogI
+        DxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpJbnQ2NCIgTmFtZT0iTnVtZXJhdG9yIi8+CiAgP
+        G9wYzpGaWVsZCBUeXBlTmFtZT0ib3BjOlVJbnQ2NCIgTmFtZT0iRGVub21pbmF0b3IiLz4KI
+        Dwvb3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0id
+        G5zOkRhcUJhc2VTdHJ1Y3R1cmUiIE5hbWU9IlNlbGVjdGlvbkVudHJ5U3RydWN0dXJlIj4KI
+        CA8b3BjOkRvY3VtZW50YXRpb24+QW4gZW50cnkgaW4gdGhlIFNlbGVjdGlvblZhbHVlcyBvZ
+        iBhIFNlbGVjdGlvblZhcmlhYmxlVHlwZTwvb3BjOkRvY3VtZW50YXRpb24+CiAgPG9wYzpGa
+        WVsZCBUeXBlTmFtZT0ib3BjOkludDY0IiBOYW1lPSJLZXkiLz4KICA8b3BjOkZpZWxkIFR5c
+        GVOYW1lPSJ1YTpWYXJpYW50IiBOYW1lPSJWYWx1ZSIvPgogPC9vcGM6U3RydWN0dXJlZFR5c
+        GU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFVUluZm9ybWF0aW9uIiBOY
+        W1lPSJFVUluZm9ybWF0aW9uV2l0aFF1YW50aXR5Ij4KICA8b3BjOkZpZWxkIFNvdXJjZVR5c
+        GU9InVhOkVVSW5mb3JtYXRpb24iIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJOY
+        W1lc3BhY2VVcmkiLz4KICA8b3BjOkZpZWxkIFNvdXJjZVR5cGU9InVhOkVVSW5mb3JtYXRpb
+        24iIFR5cGVOYW1lPSJvcGM6SW50MzIiIE5hbWU9IlVuaXRJZCIvPgogIDxvcGM6RmllbGQgU
+        291cmNlVHlwZT0idWE6RVVJbmZvcm1hdGlvbiIgVHlwZU5hbWU9InVhOkxvY2FsaXplZFRle
+        HQiIE5hbWU9IkRpc3BsYXlOYW1lIi8+CiAgPG9wYzpGaWVsZCBTb3VyY2VUeXBlPSJ1YTpFV
+        UluZm9ybWF0aW9uIiBUeXBlTmFtZT0idWE6TG9jYWxpemVkVGV4dCIgTmFtZT0iRGVzY3Jpc
+        HRpb24iLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJRd
+        WFudGl0eSIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+Cjwvb3BjOlR5cGVEaWN0aW9uYXJ5P
+        go=</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6023" NodeId="ns=1;i=6024" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6023</Reference>
+        </References>
+        <Value>
+            <uax:String>https://docs.opendaq.io/specifications/opc-ua/daq/bt</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="TypeDictionary_XmlSchema" DataType="ByteString" NodeId="ns=1;i=6025" BrowseName="1:TypeDictionary">
+        <DisplayName>TypeDictionary</DisplayName>
+        <Description>Collects the data type descriptions of https://docs.opendaq.io/specifications/opc-ua/daq/bt</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6028</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6039</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6036</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6026</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6034</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6044</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
+        HRwczovL2RvY3Mub3BlbmRhcS5pby9zcGVjaWZpY2F0aW9ucy9vcGMtdWEvZGFxL2J0L1R5c
+        GVzLnhzZCIgeG1sbnM6dG5zPSJodHRwczovL2RvY3Mub3BlbmRhcS5pby9zcGVjaWZpY2F0a
+        W9ucy9vcGMtdWEvZGFxL2J0L1R5cGVzLnhzZCIgeG1sbnM6dWE9Imh0dHA6Ly9vcGNmb3VuZ
+        GF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIgeG1sbnM6eHM9Imh0dHA6Ly93d3cud
+        zMub3JnLzIwMDEvWE1MU2NoZW1hIj4KIDx4czppbXBvcnQgbmFtZXNwYWNlPSJodHRwOi8vb
+        3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9UeXBlcy54c2QiLz4KIDx4czpjb21wbGV4V
+        HlwZSBuYW1lPSJEYXFCYXNlU3RydWN0dXJlIj4KICA8eHM6c2VxdWVuY2UvPgogPC94czpjb
+        21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpEYXFCYXNlU3RydWN0dXJlIiBuY
+        W1lPSJEYXFCYXNlU3RydWN0dXJlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mR
+        GFxQmFzZVN0cnVjdHVyZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY
+        2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6RGFxQmFzZVN0cnVjd
+        HVyZSIgbmFtZT0iRGFxQmFzZVN0cnVjdHVyZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzO
+        nNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMa
+        XN0T2ZEYXFCYXNlU3RydWN0dXJlIiBuYW1lPSJMaXN0T2ZEYXFCYXNlU3RydWN0dXJlIiBua
+        WxsYWJsZT0idHJ1ZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IkRhcUtleVZhbHVlUGFpc
+        iI+CiAgPHhzOmFubm90YXRpb24+CiAgIDx4czpkb2N1bWVudGF0aW9uPkEgbW9yZSBnZW5lc
+        mFsIGtleSB2YWx1ZSBwYWlyLjwveHM6ZG9jdW1lbnRhdGlvbj4KICA8L3hzOmFubm90YXRpb
+        24+CiAgPHhzOmNvbXBsZXhDb250ZW50IG1peGVkPSJmYWxzZSI+CiAgIDx4czpleHRlbnNpb
+        24gYmFzZT0idWE6RXh0ZW5zaW9uT2JqZWN0Ij4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8e
+        HM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0idWE6VmFyaWFud
+        CIgbmFtZT0iS2V5Ii8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9IjEiIHR5cGU9InVhOlZhcmlhbnQiIG5hbWU9IlZhbHVlIi8+CiAgICA8L3hzOnNlcXVlb
+        mNlPgogICA8L3hzOmV4dGVuc2lvbj4KICA8L3hzOmNvbXBsZXhDb250ZW50PgogPC94czpjb
+        21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpEYXFLZXlWYWx1ZVBhaXIiIG5hb
+        WU9IkRhcUtleVZhbHVlUGFpciIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZkRhc
+        UtleVZhbHVlUGFpciI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1c
+        nM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6RGFxS2V5VmFsdWVQYWlyI
+        iBuYW1lPSJEYXFLZXlWYWx1ZVBhaXIiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1Z
+        W5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mR
+        GFxS2V5VmFsdWVQYWlyIiBuYW1lPSJMaXN0T2ZEYXFLZXlWYWx1ZVBhaXIiIG5pbGxhYmxlP
+        SJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUmF0aW9uYWxOdW1iZXI2NCI+CiAgP
+        HhzOmNvbXBsZXhDb250ZW50IG1peGVkPSJmYWxzZSI+CiAgIDx4czpleHRlbnNpb24gYmFzZ
+        T0idWE6RXh0ZW5zaW9uT2JqZWN0Ij4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlb
+        WVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6bG9uZyIgbmFtZT0iT
+        nVtZXJhdG9yIi8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9I
+        jEiIHR5cGU9InhzOnVuc2lnbmVkTG9uZyIgbmFtZT0iRGVub21pbmF0b3IiLz4KICAgIDwve
+        HM6c2VxdWVuY2U+CiAgIDwveHM6ZXh0ZW5zaW9uPgogIDwveHM6Y29tcGxleENvbnRlbnQ+C
+        iA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlJhdGlvbmFsTnVtY
+        mVyNjQiIG5hbWU9IlJhdGlvbmFsTnVtYmVyNjQiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lP
+        SJMaXN0T2ZSYXRpb25hbE51bWJlcjY0Ij4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZ
+        W50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpSYXRpb
+        25hbE51bWJlcjY0IiBuYW1lPSJSYXRpb25hbE51bWJlcjY0IiBuaWxsYWJsZT0idHJ1ZSIvP
+        gogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZ
+        T0idG5zOkxpc3RPZlJhdGlvbmFsTnVtYmVyNjQiIG5hbWU9Ikxpc3RPZlJhdGlvbmFsTnVtY
+        mVyNjQiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iU2VsZWN0a
+        W9uRW50cnlTdHJ1Y3R1cmUiPgogIDx4czphbm5vdGF0aW9uPgogICA8eHM6ZG9jdW1lbnRhd
+        Glvbj5BbiBlbnRyeSBpbiB0aGUgU2VsZWN0aW9uVmFsdWVzIG9mIGEgU2VsZWN0aW9uVmFya
+        WFibGVUeXBlPC94czpkb2N1bWVudGF0aW9uPgogIDwveHM6YW5ub3RhdGlvbj4KICA8eHM6Y
+        29tcGxleENvbnRlbnQgbWl4ZWQ9ImZhbHNlIj4KICAgPHhzOmV4dGVuc2lvbiBiYXNlPSJ1Y
+        TpFeHRlbnNpb25PYmplY3QiPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50I
+        G1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpsb25nIiBuYW1lPSJLZXkiL
+        z4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0id
+        WE6VmFyaWFudCIgbmFtZT0iVmFsdWUiLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwveHM6Z
+        Xh0ZW5zaW9uPgogIDwveHM6Y29tcGxleENvbnRlbnQ+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
+        HhzOmVsZW1lbnQgdHlwZT0idG5zOlNlbGVjdGlvbkVudHJ5U3RydWN0dXJlIiBuYW1lPSJTZ
+        WxlY3Rpb25FbnRyeVN0cnVjdHVyZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZ
+        lNlbGVjdGlvbkVudHJ5U3RydWN0dXJlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZ
+        W50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpTZWxlY
+        3Rpb25FbnRyeVN0cnVjdHVyZSIgbmFtZT0iU2VsZWN0aW9uRW50cnlTdHJ1Y3R1cmUiIG5pb
+        GxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8e
+        HM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mU2VsZWN0aW9uRW50cnlTdHJ1Y3R1cmUiIG5hb
+        WU9Ikxpc3RPZlNlbGVjdGlvbkVudHJ5U3RydWN0dXJlIiBuaWxsYWJsZT0idHJ1ZSIvPgogP
+        HhzOmNvbXBsZXhUeXBlIG5hbWU9IkVVSW5mb3JtYXRpb25XaXRoUXVhbnRpdHkiPgogIDx4c
+        zpjb21wbGV4Q29udGVudCBtaXhlZD0iZmFsc2UiPgogICA8eHM6ZXh0ZW5zaW9uIGJhc2U9I
+        nVhOkVVSW5mb3JtYXRpb24iPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50I
+        G1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IlF1Y
+        W50aXR5Ii8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmV4dGVuc2lvbj4KICA8L3hzO
+        mNvbXBsZXhDb250ZW50PgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9I
+        nRuczpFVUluZm9ybWF0aW9uV2l0aFF1YW50aXR5IiBuYW1lPSJFVUluZm9ybWF0aW9uV2l0a
+        FF1YW50aXR5Ii8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mRVVJbmZvcm1hdGlvb
+        ldpdGhRdWFudGl0eSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1c
+        nM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6RVVJbmZvcm1hdGlvbldpd
+        GhRdWFudGl0eSIgbmFtZT0iRVVJbmZvcm1hdGlvbldpdGhRdWFudGl0eSIgbmlsbGFibGU9I
+        nRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZ
+        W50IHR5cGU9InRuczpMaXN0T2ZFVUluZm9ybWF0aW9uV2l0aFF1YW50aXR5IiBuYW1lPSJMa
+        XN0T2ZFVUluZm9ybWF0aW9uV2l0aFF1YW50aXR5IiBuaWxsYWJsZT0idHJ1ZSIvPgo8L3hzO
+        nNjaGVtYT4K</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6025" NodeId="ns=1;i=6026" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6025</Reference>
+        </References>
+        <Value>
+            <uax:String>https://docs.opendaq.io/specifications/opc-ua/daq/bt/Types.xsd</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariableType IsAbstract="true" ValueRank="-2" NodeId="ns=1;i=2002" BrowseName="1:DaqBaseVariableType">
+        <DisplayName>DaqBaseVariableType</DisplayName>
+        <Description>The basic type of a variable within the BB specification.</Description>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6041</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=2002" ValueRank="1" NodeId="ns=1;i=6002" ArrayDimensions="0" BrowseName="1:IsVisible">
+        <DisplayName>IsVisible</DisplayName>
+        <Description>If true the variable is visible for the outside.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6002" NodeId="ns=1;i=6019" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=2002" NodeId="ns=1;i=6041" BrowseName="1:NumberInList" AccessLevel="3">
+        <DisplayName>NumberInList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2005" BrowseName="1:IntrospectionVariableType">
+        <DisplayName>IntrospectionVariableType</DisplayName>
+        <Description>It defines all properties/ variabes which are needed to describe the variable by its own.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6007</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2002</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=2005" NodeId="ns=1;i=6006" BrowseName="1:CoercionExpression">
+        <DisplayName>CoercionExpression</DisplayName>
+        <Description>It descibres the rule how a value is manipulated, if an invalid value is set.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable ParentNodeId="ns=1;i=2005" ValueRank="-2" NodeId="ns=1;i=6007" BrowseName="1:DefaultValue">
+        <DisplayName>DefaultValue</DisplayName>
+        <Description>Shows the default value of the variable.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6047</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6007" NodeId="ns=1;i=6047" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=2005" NodeId="ns=1;i=6003" BrowseName="1:IsReadOnly">
+        <DisplayName>IsReadOnly</DisplayName>
+        <Description>If ture you can change the value.</Description>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6004</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6003" NodeId="ns=1;i=6004" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=2005" NodeId="ns=1;i=6001" BrowseName="1:Unit">
+        <DisplayName>Unit</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6001" NodeId="ns=1;i=6020" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=2005" NodeId="ns=1;i=6005" BrowseName="1:ValidationExpression">
+        <DisplayName>ValidationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariableType DataType="Number" ValueRank="-2" NodeId="ns=1;i=2004" BrowseName="1:NumericVariableType">
+        <DisplayName>NumericVariableType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6011</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6040</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2005</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="Number" ParentNodeId="ns=1;i=2004" ValueRank="-2" NodeId="ns=1;i=6009" BrowseName="1:DefaultValue">
+        <DisplayName>DefaultValue</DisplayName>
+        <Description>Shows the default value of the variable.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6048</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6009" NodeId="ns=1;i=6048" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6009</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Number" ParentNodeId="ns=1;i=2004" NodeId="ns=1;i=6010" BrowseName="1:MaxValue">
+        <DisplayName>MaxValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6010" NodeId="ns=1;i=6022" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6010</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Number" ParentNodeId="ns=1;i=2004" NodeId="ns=1;i=6011" BrowseName="1:MinValue">
+        <DisplayName>MinValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6011" NodeId="ns=1;i=6021" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6011</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Number" ParentNodeId="ns=1;i=2004" ValueRank="1" NodeId="ns=1;i=6040" ArrayDimensions="0" BrowseName="1:SuggestedValues">
+        <DisplayName>SuggestedValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6046</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6040" NodeId="ns=1;i=6046" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6040</Reference>
+        </References>
+    </UAVariable>
+    <UAVariableType DataType="Int64" NodeId="ns=1;i=2003" BrowseName="1:SelectionVariableType">
+        <DisplayName>SelectionVariableType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6049</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2005</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="Int64" ParentNodeId="ns=1;i=2003" NodeId="ns=1;i=6049" BrowseName="1:DefaultValue">
+        <DisplayName>DefaultValue</DisplayName>
+        <Description>Shows the default value of the variable.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6050</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6049" NodeId="ns=1;i=6050" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6049</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="SelectionEntryStructure" ParentNodeId="ns=1;i=2003" ValueRank="1" NodeId="ns=1;i=6008" ArrayDimensions="0" BrowseName="1:SelectionValues">
+        <DisplayName>SelectionValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6042</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6008" NodeId="ns=1;i=6042" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
+        </References>
+    </UAVariable>
+    <UAVariableType DataType="String" ValueRank="-2" NodeId="ns=1;i=2008" BrowseName="1:ReferenceVariableType">
+        <DisplayName>ReferenceVariableType</DisplayName>
+        <Description>The value of the variable is an evaluation expression. The evaluation expression defines which of its variables is active.</Description>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6037</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2002</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable SymbolicName="BaseDataVariable" DataType="String" ParentNodeId="ns=1;i=2008" NodeId="ns=1;i=6037" BrowseName="1:&lt;BaseDataVariable>">
+        <DisplayName>&lt;BaseDataVariable></DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2008</Reference>
+        </References>
+    </UAVariable>
+    <UAVariableType DataType="Structure" ValueRank="-2" NodeId="ns=1;i=2007" BrowseName="1:StructureVariableType">
+        <DisplayName>StructureVariableType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6056</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=2002</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=2007" NodeId="ns=1;i=6056" BrowseName="1:DefaultValue" AccessLevel="3">
+        <DisplayName>DefaultValue</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6057</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=2007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6056" NodeId="ns=1;i=6057" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6056</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="KeyValuePair" ParentNodeId="ns=1;i=2007" ValueRank="1" NodeId="ns=1;i=6029" ArrayDimensions="0" BrowseName="1:FieldCoercionExpression">
+        <DisplayName>FieldCoercionExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="KeyValuePair" ParentNodeId="ns=1;i=2007" ValueRank="1" NodeId="ns=1;i=6030" ArrayDimensions="0" BrowseName="1:FieldValidationExpression">
+        <DisplayName>FieldValidationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariableType ValueRank="-2" NodeId="ns=1;i=2001" BrowseName="1:EvaluationVariableType">
+        <DisplayName>EvaluationVariableType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6281</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=63</Reference>
+        </References>
+    </UAVariableType>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=2001" NodeId="ns=1;i=6281" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2001</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType IsAbstract="true" NodeId="ns=1;i=1010" BrowseName="1:DaqBaseObjectType">
+        <DisplayName>DaqBaseObjectType</DisplayName>
+        <Description>The general base object for all daq object types.</Description>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6032</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable SymbolicName="BaseDataVariable" ParentNodeId="ns=1;i=1010" NodeId="ns=1;i=6031" BrowseName="1:&lt;BaseDataVariable>" AccessLevel="3">
+        <DisplayName>&lt;BaseDataVariable></DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6045</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=6031" NodeId="ns=1;i=6045" BrowseName="1:NumberInList" AccessLevel="3">
+        <DisplayName>NumberInList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6031</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="VariableBlock" ParentNodeId="ns=1;i=1010" NodeId="ns=1;i=5006" BrowseName="1:&lt;VariableBlock>">
+        <DisplayName>&lt;VariableBlock></DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6051</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6051" BrowseName="1:NumberInList" AccessLevel="3">
+        <DisplayName>NumberInList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=1010" NodeId="ns=1;i=6032" BrowseName="1:NumberInList" AccessLevel="3">
+        <DisplayName>NumberInList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1010</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:VariableBlockType">
+        <DisplayName>VariableBlockType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6054</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6052</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1010</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6054" BrowseName="1:IsReadOnly">
+        <DisplayName>IsReadOnly</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6055</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6054" NodeId="ns=1;i=6055" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6054</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6052" BrowseName="1:IsVisible">
+        <DisplayName>IsVisible</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6053</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6052" NodeId="ns=1;i=6053" BrowseName="1:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6052</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="https___docs_opendaq_io_specifications_opc_ua_daq_bt" NodeId="ns=1;i=5001" BrowseName="1:https://docs.opendaq.io/specifications/opc-ua/daq/bt">
+        <DisplayName>https://docs.opendaq.io/specifications/opc-ua/daq/bt</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6016</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6012" BrowseName="IsNamespaceSubset">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6013" BrowseName="NamespacePublicationDate">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2023-07-19T17:15:47Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6014" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+        <Value>
+            <uax:String>https://docs.opendaq.io/specifications/opc-ua/daq/bt</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6015" BrowseName="NamespaceVersion">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+        <Value>
+            <uax:String>3.0.0</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5001" ValueRank="1" NodeId="ns=1;i=6016" ArrayDimensions="0" BrowseName="StaticNodeIdTypes">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="NumericRange" ParentNodeId="ns=1;i=5001" ValueRank="1" NodeId="ns=1;i=6017" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6018" BrowseName="StaticStringNodeIdPattern">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=5002" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6038</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3004</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5003" BrowseName="Default XML">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6039</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3004</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultJson" NodeId="ns=1;i=5004" BrowseName="Default JSON">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3004</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=5005" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6027</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3002</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=5007" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6043</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5008" BrowseName="Default XML">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6044</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultJson" NodeId="ns=1;i=5009" BrowseName="Default JSON">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3006</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5021" BrowseName="Default XML">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6028</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3002</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultJson" NodeId="ns=1;i=5022" BrowseName="Default JSON">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3002</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=5023" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3005</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6035</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5027" BrowseName="Default XML">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3005</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6036</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultJson" NodeId="ns=1;i=5029" BrowseName="Default JSON">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3005</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultBinary" NodeId="ns=1;i=5030" BrowseName="Default Binary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3019</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6033</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultXml" NodeId="ns=1;i=5031" BrowseName="Default XML">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3019</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6034</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="DefaultJson" NodeId="ns=1;i=5032" BrowseName="Default JSON">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=1;i=3019</Reference>
+        </References>
+    </UAObject>
+</UANodeSet>

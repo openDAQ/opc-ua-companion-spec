@@ -1,0 +1,146 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="https://docs.opendaq.io/specifications/opc-ua/daq/bt" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="https://docs.opendaq.io/specifications/opc-ua/daq/bsp">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="https://docs.opendaq.io/specifications/opc-ua/daq/bt"/>
+    <opc:StructuredType BaseType="ua:AxisInformation" Name="DaqAxisInformation">
+        <opc:Field SourceType="ua:AxisInformation" TypeName="ua:EUInformation" Name="EngineeringUnits"/>
+        <opc:Field SourceType="ua:AxisInformation" TypeName="ua:Range" Name="EURange"/>
+        <opc:Field SourceType="ua:AxisInformation" TypeName="ua:LocalizedText" Name="Title"/>
+        <opc:Field SourceType="ua:AxisInformation" TypeName="ua:AxisScaleEnumeration" Name="AxisScaleType"/>
+        <opc:Field SourceType="ua:AxisInformation" TypeName="opc:Int32" Name="NoOfAxisSteps"/>
+        <opc:Field LengthField="NoOfAxisSteps" SourceType="ua:AxisInformation" TypeName="opc:Double" Name="AxisSteps"/>
+        <opc:Field TypeName="ua:Variant" Name="AxisConstant"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfAxisLabels"/>
+        <opc:Field LengthField="NoOfAxisLabels" TypeName="opc:CharArray" Name="AxisLabels"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="BaseDataDescriptorStructure">
+        <opc:Documentation>A descriptor sets data into context.</opc:Documentation>
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDimensions"/>
+        <opc:Field LengthField="NoOfDimensions" TypeName="tns:DimensionDescriptorStructure" Name="Dimensions"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfMetadata"/>
+        <opc:Field LengthField="NoOfMetadata" TypeName="ua:KeyValuePair" Name="Metadata"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BaseDataDescriptorStructure" Name="DataDescriptorStructure">
+        <opc:Field TypeName="opc:Bit" Name="UnitSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PostScalingSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="OriginSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="TickResolutionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ValueRangeSpecified"/>
+        <opc:Field Length="27" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SourceType="tns:BaseDataDescriptorStructure" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SourceType="tns:BaseDataDescriptorStructure" TypeName="opc:Int32" Name="NoOfDimensions"/>
+        <opc:Field LengthField="NoOfDimensions" SourceType="tns:BaseDataDescriptorStructure" TypeName="tns:DimensionDescriptorStructure" Name="Dimensions"/>
+        <opc:Field SourceType="tns:BaseDataDescriptorStructure" TypeName="opc:Int32" Name="NoOfMetadata"/>
+        <opc:Field LengthField="NoOfMetadata" SourceType="tns:BaseDataDescriptorStructure" TypeName="ua:KeyValuePair" Name="Metadata"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="Rule"/>
+        <opc:Field TypeName="tns:SampleTypeEnumeration" Name="SampleType"/>
+        <opc:Field SwitchField="UnitSpecified" TypeName="ns1:EUInformationWithQuantity" Name="Unit"/>
+        <opc:Field SwitchField="PostScalingSpecified" TypeName="tns:PostScalingStructure" Name="PostScaling"/>
+        <opc:Field SwitchField="OriginSpecified" TypeName="opc:CharArray" Name="Origin"/>
+        <opc:Field SwitchField="TickResolutionSpecified" TypeName="ns1:RationalNumber64" Name="TickResolution"/>
+        <opc:Field SwitchField="ValueRangeSpecified" TypeName="ua:Range" Name="ValueRange"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BaseDataDescriptorStructure" Name="StructDescriptorStructure">
+        <opc:Field SourceType="tns:BaseDataDescriptorStructure" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field SourceType="tns:BaseDataDescriptorStructure" TypeName="opc:Int32" Name="NoOfDimensions"/>
+        <opc:Field LengthField="NoOfDimensions" SourceType="tns:BaseDataDescriptorStructure" TypeName="tns:DimensionDescriptorStructure" Name="Dimensions"/>
+        <opc:Field SourceType="tns:BaseDataDescriptorStructure" TypeName="opc:Int32" Name="NoOfMetadata"/>
+        <opc:Field LengthField="NoOfMetadata" SourceType="tns:BaseDataDescriptorStructure" TypeName="ua:KeyValuePair" Name="Metadata"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfFields"/>
+        <opc:Field LengthField="NoOfFields" TypeName="ua:ExtensionObject" Name="Fields"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="BaseRuleDescriptionStructure">
+        <opc:Field TypeName="opc:CharArray" Name="Type"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BaseRuleDescriptionStructure" Name="CustomRuleDescriptionStructure">
+        <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfParameters"/>
+        <opc:Field LengthField="NoOfParameters" TypeName="ns1:DaqKeyValuePair" Name="Parameters"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BaseRuleDescriptionStructure" Name="ImplicitRuleDescriptionStructure">
+        <opc:Documentation>Rules that are calculated</opc:Documentation>
+        <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ImplicitRuleDescriptionStructure" Name="ConstantRuleDescriptionStructure">
+        <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field TypeName="ua:Variant" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ImplicitRuleDescriptionStructure" Name="LinearRuleDescriptionStructure">
+        <opc:Field TypeName="opc:Bit" Name="SizeSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field TypeName="ua:Variant" Name="Start"/>
+        <opc:Field TypeName="ua:Variant" Name="Delta"/>
+        <opc:Field SwitchField="SizeSpecified" TypeName="opc:UInt32" Name="Size"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ImplicitRuleDescriptionStructure" Name="ListRuleDescriptionStructure">
+        <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfElements"/>
+        <opc:Field LengthField="NoOfElements" TypeName="ua:Variant" Name="Elements"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ImplicitRuleDescriptionStructure" Name="LogRuleDescriptionStructure">
+        <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field TypeName="opc:UInt16" Name="Base"/>
+        <opc:Field TypeName="ua:Variant" Name="Start"/>
+        <opc:Field TypeName="ua:Variant" Name="Delta"/>
+        <opc:Field TypeName="opc:UInt32" Name="Size"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="BaseScalingDescriptionStructure">
+        <opc:Field TypeName="opc:CharArray" Name="Type"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BaseScalingDescriptionStructure" Name="LinearScalingDescriptionStructure">
+        <opc:Field SourceType="tns:BaseScalingDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field TypeName="ua:Variant" Name="Scale"/>
+        <opc:Field TypeName="ua:Variant" Name="Offset"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="DimensionDescriptorStructure">
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="UnitSpecified"/>
+        <opc:Field Length="30" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="DimensionRule"/>
+        <opc:Field SwitchField="UnitSpecified" TypeName="ns1:EUInformationWithQuantity" Name="Unit"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="FunctionBlockInfoStructure">
+        <opc:Field TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="PostScalingStructure">
+        <opc:Field TypeName="tns:SampleTypeEnumeration" Name="InputSampleType"/>
+        <opc:Field TypeName="tns:SampleTypeEnumeration" Name="OutputSampleType"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="ScalingDescription"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="StatusDescriptionStructure">
+        <opc:Field TypeName="opc:UInt16" Name="BitPosition"/>
+        <opc:Field TypeName="opc:CharArray" Name="UUID"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="StatusStructure">
+        <opc:Documentation>Reflects a status of a node.</opc:Documentation>
+        <opc:Field TypeName="opc:UInt32" Name="Warning"/>
+        <opc:Field TypeName="opc:UInt32" Name="Error"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="DomainTypeEnumeration">
+        <opc:EnumeratedValue Name="Range" Value="0"/>
+        <opc:EnumeratedValue Name="UInt64" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SampleTypeEnumeration">
+        <opc:EnumeratedValue Name="Invalid" Value="0"/>
+        <opc:EnumeratedValue Name="Float32" Value="1"/>
+        <opc:EnumeratedValue Name="Float64" Value="2"/>
+        <opc:EnumeratedValue Name="UInt8" Value="3"/>
+        <opc:EnumeratedValue Name="Int8" Value="4"/>
+        <opc:EnumeratedValue Name="UInt16" Value="5"/>
+        <opc:EnumeratedValue Name="Int16" Value="6"/>
+        <opc:EnumeratedValue Name="UInt32" Value="7"/>
+        <opc:EnumeratedValue Name="Int32" Value="8"/>
+        <opc:EnumeratedValue Name="UInt64" Value="9"/>
+        <opc:EnumeratedValue Name="Int64" Value="10"/>
+        <opc:EnumeratedValue Name="ComplexFloat32" Value="11"/>
+        <opc:EnumeratedValue Name="ComplexFloat64" Value="12"/>
+        <opc:EnumeratedValue Name="Binary" Value="13"/>
+        <opc:EnumeratedValue Name="String" Value="14"/>
+        <opc:EnumeratedValue Name="RangeInt64" Value="15"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
