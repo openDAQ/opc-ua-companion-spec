@@ -1,23 +1,10 @@
 # Introduction
 
-This respority stores/includes opc-ua specification for test and measurement system and the specification which are required for them.
+This respority stores/includes the `NodeSet2.xml`, `Types.bsd` and `NodeId.csv` file of the distributed openDAQ companion specifacation (cf. [openDAQ_OPC-UA_Specification](https://docs.opendaq.com/download/Specifications%20and%20documentation/opendaq_opc_ua_specification.pdf)). Besides this, constants are stored in 
 
-Following specification are present:
+The following figure shows how the openDAQ specification is structured and its dependencies.
 
-- The Opc-UA companion specification
-  - Opc-UA General Standard (NameSpace 0)
-  - Namespace 1 is reserved for the application
-  - Opc-UA for Devices (DI) (Namespace 2)
-  - TestAndMeasurement/BaseTypes (NameSpace 3)
-  - TestAndMeasurement/BaseSignalProcessing (NameSpace 4)
-  - TestAndMeasurement/Device (NameSpace 5)
-  - TestAndMeasurement/ExplicitSignalProcessing (NameSpace 6)
-
-__Important: The Files is in the `opc-ua-companion-specifications`, `default-value`, `multi-state-value-discrete-types` and `error-codes` are *the Source of Truth*.__
-
-# OPC-UA Companion Specification
-
-Stores the different defined companion specifications which are used by the Test and Measurement Companion Specification. The *NodeSet2.xml*, *.csv* and *.bsd* files are generated from the Tool *UaModeler*. All specification are saved in the folder `opc-ua-companion-specifications`. In contrast to this, the *default*, *multi-state-value-discrete-types* and *error-description* .csv files are manipulated by hand.
+![New Project](img/openDAQLayers.drawio.svg)
 
 ## Error Codes
 

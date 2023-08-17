@@ -1,0 +1,3 @@
+BrowseName;Value;Name;Description
+IpNetworkInterfaceType_Mode;0;DHCP;Use Dynamic Host Configuration Protocol to have the ip configuration done automatically
+IpNetworkInterfaceType_Mode;1;Static;Use static ipv4 configuration using an ipv4 address and a subnetmask

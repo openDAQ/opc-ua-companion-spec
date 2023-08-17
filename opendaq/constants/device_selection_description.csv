@@ -1,0 +1,31 @@
+BrowseName;Value;Name;Description
+SynchronizationType_TimeSource;0;Internal;No external time source is used. So an internal is used.
+SynchronizationType_TimeSource;1;Ptp;Another Ptp master is used as a time source for the synchronization protocol. 
+SynchronizationType_TimeSource;2;Ntp;Another Ntp server is used as a time source for the synchronization protocol. 
+SynchronizationType_TimeSource;3;GPS;GPS is used as a time source as a time source for the synchronization protocol. 
+SynchronizationType_TimeSource;4;EtherCat;EtherCat is used as a time source as a time source for the synchronization protocol. 
+SynchronizationType_TimeSource;5;IRIG;IRIG is used as a time source as a time source for the synchronization protocol. 
+SynchronizationType_TimeSource;10;Slot;In a frame card relationship Frame means that a slot delivers the time source.
+SynchronizationType_TimeSource;20;Frame;In a frame card relationship Frame means that the clock is distributed by the Frame.
+SynchronizationType_SynchronizationProtocol;1;Ptp;Enables to configure Ptp and show its synchronization status.
+SynchronizationType_SynchronizationProtocol;2;Ntp;Enables to configure Ntp and show its synchronization status.
+SynchronizationType_SynchronizationProtocol;3;GPS;Enables to configure GPS and show its synchronization status.
+SynchronizationType_SynchronizationProtocol;4;EtherCat;Enables to configure EtherCat and show its synchronization status.
+SynchronizationType_SynchronizationProtocol;5;IRIG;Enables to configure IRIG and show its status.
+SynchronizationType_SynchronizationProtocol;20;IndirectPtp;IndirectPtp means that is is possible to display the synchronization status of its associated  source without the possibility to manipulate it. This is useful in frame board relationship. 
+SynchronizationType_SynchronizationProtocol;21;IndirectNtp;IndirectNtp means that is is possible to display the synchronization status of its associated source without the possibility to manipulate it.  This is useful in frame board relationship. 
+SynchronizationType_SynchronizationProtocol;22;IndirectGPS;IndirectGPS means that is is possible to display the synchronization status of its associated source without the possibility to manipulate it.  This is useful in frame board relationship. 
+SynchronizationType_SynchronizationProtocol;23;IndirectEtherCat;IndirectEtherCat means that is is possible to display the synchronization status of its associated source without the possibility to manipulate it.  This is useful in frame board relationship. 
+SynchronizationType_SynchronizationProtocol;24;IndirectIRIG;IndirectIRIG means that is is possible to display the synchronization status of its associated source without the possibility to manipulate it.  This is useful in frame board relationship. 
+PtpType_Status_State;0;Freerun;Not synchronizing to another clock. Might be Ptp grandmaster for others.
+PtpType_Status_State;1;FreqLocking;Synchronization is on the way to get frequency locked.
+PtpType_Status_State;2;FreqLocked;Synchronization is frequency locked.
+PtpType_Status_State;3;PhaseLocking;Synchronization is one the way to get phase locked.
+PtpType_Status_State;4;PhaseLocked;Synchronization is phase locked.
+PtpType_Status_State;5;HoldOver;Lost contact to the ptp grandmaster clock.
+PtpType_Status_State;6;Invalid;Synchronization is in an invalid state.
+PtpType_Status_State;7;NotSet;Synchronization is not set, because the device is not ready yet.
+DaqDeviceType_DeviceStatus;0;Booting;Device is booting and starting all services for running a measurement.
+DaqDeviceType_DeviceStatus;1;Operational;Device is ready to use for acquire measurement values.
+DaqDeviceType_DeviceStatus;2;Reconfiguration;A reconfiguration takes place. It is possible to acquire measurement values, but the reconfiguration procedure could impact it. The configuration change is only stored permanently on the device when it leaves this state.
+DaqDeviceType_DeviceStatus;3;Error;An internal error occurs. Device needs a reboot.
