@@ -1,27 +1,19 @@
 # Introduction
 
-This respority stores/includes opc-ua specification for test and measurement system and the specification which are required for them.
+This respority stores/includes the `NodeSet2.xml`, `Types.bsd` and `NodeId.csv` file of the distributed openDAQ companion specifacation (cf. [openDAQ_OPC-UA_Specification](https://docs.opendaq.com/download/Specifications%20and%20documentation/opendaq_opc_ua_specification.pdf)) in the folder `opendaq`.
 
-Following specification are present:
+The following figure shows how the openDAQ specification is structured and its dependencies.
 
-- The Opc-UA companion specification
-  - Opc-UA General Standard (NameSpace 0)
-  - Namespace 1 is reserved for the application
-  - Opc-UA for Devices (DI) (Namespace 2)
-  - TestAndMeasurement/BaseTypes (NameSpace 3)
-  - TestAndMeasurement/BaseSignalProcessing (NameSpace 4)
-  - TestAndMeasurement/Device (NameSpace 5)
-  - TestAndMeasurement/ExplicitSignalProcessing (NameSpace 6)
+![New Project](img/openDAQLayers.drawio.svg)
 
-__Important: The Files is in the `opc-ua-companion-specifications`, `default-value`, `multi-state-value-discrete-types` and `error-codes` are *the Source of Truth*.__
+Besides the opc-ua  files also constants and error code are included in this repository via `.csv` files. They can be found in the `constants` folder within the `openDAQ` folder.
 
-# OPC-UA Companion Specification
+## Constants
 
-Stores the different defined companion specifications which are used by the Test and Measurement Companion Specification. The *NodeSet2.xml*, *.csv* and *.bsd* files are generated from the Tool *UaModeler*. All specification are saved in the folder `opc-ua-companion-specifications`. In contrast to this, the *default*, *multi-state-value-discrete-types* and *error-description* .csv files are manipulated by hand.
+In the constant files standard values are defined which apply for a specific node of a `SelectionVariableType` for example.
 
 ## Error Codes
 
-The Error Codes are as well standardized. For every NameSpace Layer own Error Codes are defined, so that different domains
-are available. The error codes .csv files are stored in the folder `error-codes`.
+The Error Codes are as well standardized. For every NameSpace Layer own Error Codes are defined. 
 The primary error code matches with defined error codes from opc-ua. For more specific infomration about an error a secondary code is used.
 It is a GUI, which is available as a data type at opc-ua as well.

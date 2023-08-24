@@ -1,0 +1,10 @@
+name;uuid;code;message
+InvalidRequest;c2def1d8-27ef-409c-97ad-20cc92b4444c;InvalidArgument;Invalid request
+NoValidSetting;3c1ff633-f24a-4319-a417-c17c3c0e13a4;InvalidArgument;No valid setting found
+InvalidArgument;197afc90-00df-4e7d-8d69-3526ed2dde70;InvalidArgument;Property has invalid value
+UnexpectedParamFormat;ed91ce07-d412-4e69-b4c7-d57bfdb4bab0;InvalidArgument;Json is not an array
+CertificateError;780ef8c4-6cff-4a63-b52e-271371d6427a;InvalidArgument;Certificate error
+ConfigurationLocked;a340a6b2-c571-475c-bbe7-2068aa6f0001;WrongState;Configuration may not be changed. It is already in use
+ModeTemperatureError;72e610fd-a3af-4ca3-a905-9ae336f0d517;WrongState;Cannot change mode: Temperature too high
+HardwareAccessError;b90716c5-a146-4a0c-b728-c39717b49d35;InternalError;Hardware access failed
+InternalSystemError;8891877c-0ec2-4e39-8543-073684e396a4;InternalError;Internal system error
