@@ -7,7 +7,7 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/esp" PublicationDate="2023-07-19T17:29:17Z" Version="3.0.0">
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/esp" PublicationDate="2023-08-25T13:49:46Z" Version="3.0.1">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2022-11-03T00:00:00Z" Version="1.04.0"/>
             <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-07-19T17:15:47Z" Version="3.0.0"/>
@@ -49,7 +49,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="K8HBvV7ucBRwcrXbxFKQgg==" Version="1.6.9"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="g2KgNGolB4VO3D/orPleYQ==" Version="1.6.9"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3008" BrowseName="1:PtpClockTypeEnumeration">
@@ -225,8 +225,8 @@
         <DisplayName>IPv4AddressStructure</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6032</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5024</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6032</Reference>
         </References>
         <Value>
             <uax:String>IPv4AddressStructure</uax:String>
@@ -236,8 +236,8 @@
         <DisplayName>IPv4AddressStructure</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6034</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5025</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6034</Reference>
         </References>
         <Value>
             <uax:String>//xs:element[@name='IPv4AddressStructure']</uax:String>
@@ -260,8 +260,8 @@
         <DisplayName>IPv6AddressStructure</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6032</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5027</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6032</Reference>
         </References>
         <Value>
             <uax:String>IPv6AddressStructure</uax:String>
@@ -271,8 +271,8 @@
         <DisplayName>IPv6AddressStructure</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6034</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5028</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6034</Reference>
         </References>
         <Value>
             <uax:String>//xs:element[@name='IPv6AddressStructure']</uax:String>
@@ -302,8 +302,8 @@
         <DisplayName>PtpConfigurationStructure</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6032</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6032</Reference>
         </References>
         <Value>
             <uax:String>PtpConfigurationStructure</uax:String>
@@ -313,8 +313,8 @@
         <DisplayName>PtpConfigurationStructure</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6034</Reference>
             <Reference ReferenceType="HasDescription" IsForward="false">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6034</Reference>
         </References>
         <Value>
             <uax:String>//xs:element[@name='PtpConfigurationStructure']</uax:String>
@@ -560,32 +560,32 @@
         <DisplayName>Interfaces</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1011</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
         </References>
     </UAObject>
     <UAObject SymbolicName="Interface" ParentNodeId="ns=1;i=5004" NodeId="ns=1;i=5006" BrowseName="1:&lt;Interface>">
         <DisplayName>&lt;Interface></DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6017</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1015</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=5012</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5012</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="Int64" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6017" BrowseName="1:Mode" AccessLevel="3">
         <DisplayName>Mode</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5006</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6021</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5006</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Int64" ParentNodeId="ns=1;i=6017" NodeId="ns=1;i=6018" BrowseName="2:DefaultValue">
@@ -594,8 +594,8 @@
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6018" NodeId="ns=1;i=6019" BrowseName="2:EvaluationExpression">
@@ -642,11 +642,11 @@
     <UAObject ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=5012" BrowseName="1:StaticConfigurations">
         <DisplayName>StaticConfigurations</DisplayName>
         <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6053</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6055</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6041</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5006</Reference>
         </References>
     </UAObject>
@@ -654,19 +654,19 @@
         <DisplayName>IPv4</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2007</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6081</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6054</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6081</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5012</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6054</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=6053" NodeId="ns=1;i=6081" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="IPv4AddressStructure" ParentNodeId="ns=1;i=6053" NodeId="ns=1;i=6081" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6082</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6053</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6082</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6081" NodeId="ns=1;i=6082" BrowseName="2:EvaluationExpression">
@@ -689,19 +689,19 @@
         <DisplayName>IPv6</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2007</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6083</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6058</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6083</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5012</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6058</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=6055" NodeId="ns=1;i=6083" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="IPv6AddressStructure" ParentNodeId="ns=1;i=6055" NodeId="ns=1;i=6083" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6084</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6055</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6084</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6083" NodeId="ns=1;i=6084" BrowseName="2:EvaluationExpression">
@@ -739,21 +739,24 @@
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1011" NodeId="ns=1;i=6010" BrowseName="1:StaticDefaultGateway" AccessLevel="3">
         <DisplayName>StaticDefaultGateway</DisplayName>
         <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2005</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6071</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2005</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1011</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
-    <UAVariable ParentNodeId="ns=1;i=6010" ValueRank="-2" NodeId="ns=1;i=6071" BrowseName="2:DefaultValue">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6010" ValueRank="-2" NodeId="ns=1;i=6071" BrowseName="2:DefaultValue">
         <DisplayName>DefaultValue</DisplayName>
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6072</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6072</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6071" NodeId="ns=1;i=6072" BrowseName="2:EvaluationExpression">
@@ -783,12 +786,12 @@
     <UAVariable DataType="Int64" ParentNodeId="ns=1;i=1015" NodeId="ns=1;i=6042" BrowseName="1:Mode" AccessLevel="3">
         <DisplayName>Mode</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6047</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6057</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6028</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6047</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1015</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6057</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6028</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Int64" ParentNodeId="ns=1;i=6042" NodeId="ns=1;i=6047" BrowseName="2:DefaultValue">
@@ -797,8 +800,8 @@
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6048</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6042</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6048</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6047" NodeId="ns=1;i=6048" BrowseName="2:EvaluationExpression">
@@ -837,31 +840,31 @@
     <UAObject ParentNodeId="ns=1;i=1015" NodeId="ns=1;i=5009" BrowseName="1:StaticConfigurations">
         <DisplayName>StaticConfigurations</DisplayName>
         <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6049</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6051</Reference>
-            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6039</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1015</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="IPv4AddressStructure" ParentNodeId="ns=1;i=5009" NodeId="ns=1;i=6049" BrowseName="1:IPv4" AccessLevel="3">
         <DisplayName>IPv4</DisplayName>
         <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2007</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6061</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6050</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2007</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5009</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6050</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=6049" NodeId="ns=1;i=6061" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="IPv4AddressStructure" ParentNodeId="ns=1;i=6049" NodeId="ns=1;i=6061" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6049</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6061" NodeId="ns=1;i=6064" BrowseName="2:EvaluationExpression">
@@ -883,20 +886,20 @@
     <UAVariable DataType="IPv6AddressStructure" ParentNodeId="ns=1;i=5009" NodeId="ns=1;i=6051" BrowseName="1:IPv6" AccessLevel="3">
         <DisplayName>IPv6</DisplayName>
         <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2007</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6079</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6052</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2007</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5009</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6052</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=6051" NodeId="ns=1;i=6079" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="IPv6AddressStructure" ParentNodeId="ns=1;i=6051" NodeId="ns=1;i=6079" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6080</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6051</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6080</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6079" NodeId="ns=1;i=6080" BrowseName="2:EvaluationExpression">
@@ -942,22 +945,22 @@
     <UAObject ParentNodeId="ns=1;i=1008" NodeId="ns=1;i=5007" BrowseName="3:Parameters">
         <DisplayName>Parameters</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6059</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6059</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1008</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5011</Reference>
         </References>
     </UAObject>
     <UAVariable DataType="PtpConfigurationStructure" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6059" BrowseName="1:Configuration" AccessLevel="3">
         <DisplayName>Configuration</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6085</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6060</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2007</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6085</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6060</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Structure" ParentNodeId="ns=1;i=6059" NodeId="ns=1;i=6085" BrowseName="2:DefaultValue" AccessLevel="3">
@@ -965,8 +968,8 @@
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6086</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6059</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6086</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6085" NodeId="ns=1;i=6086" BrowseName="2:EvaluationExpression">
@@ -997,9 +1000,9 @@
         <DisplayName>Ports</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6045</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5007</Reference>
         </References>
     </UAObject>
@@ -1008,10 +1011,10 @@
         <Description>The port can be on or off. In display name the name of the ethernet port shall be applied.</Description>
         <References>
             <Reference ReferenceType="HasModellingRule">i=11508</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6077</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2005</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6046</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5011</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6077</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6046</Reference>
         </References>
     </UAVariable>
     <UAVariable ParentNodeId="ns=1;i=6045" ValueRank="-2" NodeId="ns=1;i=6077" BrowseName="2:DefaultValue">
@@ -1020,8 +1023,8 @@
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6078</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6045</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6078</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6077" NodeId="ns=1;i=6078" BrowseName="2:EvaluationExpression">
@@ -1051,11 +1054,11 @@
     <UAObject ParentNodeId="ns=1;i=1008" NodeId="ns=1;i=5010" BrowseName="3:Status">
         <DisplayName>Status</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6023</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6023</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6065</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1008</Reference>
         </References>
     </UAObject>
@@ -1063,10 +1066,10 @@
         <DisplayName>Grandmaster</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6073</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2005</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6073</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
         </References>
     </UAVariable>
     <UAVariable ParentNodeId="ns=1;i=6023" ValueRank="-2" NodeId="ns=1;i=6073" BrowseName="2:DefaultValue">
@@ -1075,8 +1078,8 @@
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6074</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6074</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6073" NodeId="ns=1;i=6074" BrowseName="2:EvaluationExpression">
@@ -1106,11 +1109,11 @@
     <UAVariable DataType="Int64" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6065" BrowseName="1:State" AccessLevel="3">
         <DisplayName>State</DisplayName>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6066</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6066</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6070</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6068</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5010</Reference>
         </References>
     </UAVariable>
@@ -1120,8 +1123,8 @@
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6065</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6066" NodeId="ns=1;i=6067" BrowseName="2:EvaluationExpression">
@@ -1172,8 +1175,8 @@
         <Description>Adds a log message to the internal syslog.</Description>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6038</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1013</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6038</Reference>
         </References>
     </UAMethod>
     <UAVariable DataType="Argument" ParentNodeId="ns=1;i=7004" ValueRank="1" NodeId="ns=1;i=6038" ArrayDimensions="2" BrowseName="InputArguments">
@@ -1227,10 +1230,10 @@
         <Description>External location were the syslog on the system should write to.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2005</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6075</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6056</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6075</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1013</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6056</Reference>
         </References>
     </UAVariable>
     <UAVariable ParentNodeId="ns=1;i=6040" ValueRank="-2" NodeId="ns=1;i=6075" BrowseName="2:DefaultValue">
@@ -1239,8 +1242,8 @@
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6076</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6040</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6076</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6075" NodeId="ns=1;i=6076" BrowseName="2:EvaluationExpression">
@@ -1263,12 +1266,12 @@
         <DisplayName>Level</DisplayName>
         <Description>Which syslog levels should be written to the external destination.</Description>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=6089</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6089</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1013</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6100</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6091</Reference>
-            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1013</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Int64" ParentNodeId="ns=1;i=6043" NodeId="ns=1;i=6089" BrowseName="2:DefaultValue">
@@ -1277,8 +1280,8 @@
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6090</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6043</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6090</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6089" NodeId="ns=1;i=6090" BrowseName="2:EvaluationExpression">
@@ -1423,12 +1426,12 @@
         <DisplayName>ParameterSet</DisplayName>
         <Description>Flat list of Parameters</Description>
         <References>
-            <Reference ReferenceType="HasComponent">ns=1;i=5005</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=1;i=1011</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5005</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6025</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6062</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1029</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6062</Reference>
         </References>
     </UAObject>
     <UAObject ParentNodeId="ns=1;i=5008" NodeId="ns=1;i=5005" BrowseName="1:Interfaces">
@@ -1460,20 +1463,23 @@
         <DisplayName>StaticDefaultGateway</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2005</Reference>
-            <Reference ReferenceType="HasComponent">ns=1;i=6087</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6087</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6063</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5008</Reference>
         </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
     </UAVariable>
-    <UAVariable ParentNodeId="ns=1;i=6062" ValueRank="-2" NodeId="ns=1;i=6087" BrowseName="2:DefaultValue">
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6062" ValueRank="-2" NodeId="ns=1;i=6087" BrowseName="2:DefaultValue">
         <DisplayName>DefaultValue</DisplayName>
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasProperty">ns=1;i=6088</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6062</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6088</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=6087" NodeId="ns=1;i=6088" BrowseName="2:EvaluationExpression">
@@ -1495,8 +1501,8 @@
     <UAObject SymbolicName="https___docs_opendaq_io_specifications_opc_ua_daq_esp" NodeId="ns=1;i=5030" BrowseName="1:https://docs.opendaq.io/specifications/opc-ua/daq/esp">
         <DisplayName>https://docs.opendaq.io/specifications/opc-ua/daq/esp</DisplayName>
         <References>
-            <Reference ReferenceType="HasProperty">ns=1;i=6092</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6092</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6093</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6094</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6095</Reference>
@@ -1523,7 +1529,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5030</Reference>
         </References>
         <Value>
-            <uax:DateTime>2023-07-19T17:29:17Z</uax:DateTime>
+            <uax:DateTime>2023-08-25T13:49:46Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5030" NodeId="ns=1;i=6094" BrowseName="NamespaceUri">
@@ -1543,7 +1549,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5030</Reference>
         </References>
         <Value>
-            <uax:String>3.0.0</uax:String>
+            <uax:String>3.0.1</uax:String>
         </Value>
     </UAVariable>
     <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5030" ValueRank="1" NodeId="ns=1;i=6096" ArrayDimensions="0" BrowseName="StaticNodeIdTypes">
