@@ -7,11 +7,11 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/device" PublicationDate="2023-07-19T17:16:12Z" Version="3.0.0">
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/device" PublicationDate="2023-11-01T14:37:38Z" Version="3.0.1">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2022-11-03T00:00:00Z" Version="1.04.0"/>
-            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-07-19T17:15:47Z" Version="3.0.0"/>
-            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-07-19T17:16:02Z" Version="3.0.0"/>
+            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-11-01T13:49:35Z" Version="3.0.1"/>
+            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-11-01T13:49:16Z" Version="3.0.1"/>
         </Model>
     </Models>
     <Aliases>
@@ -44,7 +44,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="741IyBkrzzl044On17IHOw==" Version="1.6.9"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="6bnzFaay6h7RxpeFFh4ENg==" Version="1.6.9"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3012" BrowseName="1:ErrorCodeEnumeration">
@@ -1024,8 +1024,8 @@
     <UAVariable DataType="String" ParentNodeId="ns=1;i=1009" NodeId="ns=1;i=6102" BrowseName="1:MacAddress" AccessLevel="3">
         <DisplayName>MacAddress</DisplayName>
         <References>
-            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1009</Reference>
         </References>
     </UAVariable>
@@ -1389,7 +1389,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
         </References>
     </UAVariable>
-    <UAObject ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5017" BrowseName="1:FunctionBlocks">
+    <UAObject SymbolicName="FunctionBlocks" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5017" BrowseName="1:FB">
         <DisplayName>FunctionBlocks</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1424,7 +1424,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5017</Reference>
         </References>
     </UAVariable>
-    <UAObject ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5003" BrowseName="1:InputsOutputs">
+    <UAObject SymbolicName="InputsOutputs" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5003" BrowseName="1:IO">
         <DisplayName>InputsOutputs</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -1653,7 +1653,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
         </References>
     </UAVariable>
-    <UAObject ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5004" BrowseName="1:Signals">
+    <UAObject SymbolicName="Signals" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=5004" BrowseName="1:Sig">
         <DisplayName>Signals</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
@@ -2185,7 +2185,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
         </References>
         <Value>
-            <uax:DateTime>2023-07-19T17:16:12Z</uax:DateTime>
+            <uax:DateTime>2023-11-01T14:37:38Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5012" NodeId="ns=1;i=6260" BrowseName="NamespaceUri">
@@ -2205,7 +2205,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5012</Reference>
         </References>
         <Value>
-            <uax:String>3.0.0</uax:String>
+            <uax:String>3.0.1</uax:String>
         </Value>
     </UAVariable>
     <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5012" ValueRank="1" NodeId="ns=1;i=6262" ArrayDimensions="0" BrowseName="StaticNodeIdTypes">
