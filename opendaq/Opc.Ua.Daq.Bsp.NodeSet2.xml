@@ -5,7 +5,7 @@
         <Uri>https://docs.opendaq.io/specifications/opc-ua/daq/bt</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-07-19T17:16:02Z" Version="3.0.0">
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-11-01T13:49:16Z" Version="3.0.1">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
             <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-07-19T17:15:47Z" Version="3.0.0"/>
         </Model>
@@ -45,7 +45,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="iv4lzwGVT1Tgvw7LR25dnw==" Version="1.6.9"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="YVyXcvYt+KPZPH2o30GTOw==" Version="1.6.9"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3007" BrowseName="1:DomainTypeEnumeration">
@@ -1494,7 +1494,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1011</Reference>
         </References>
     </UAVariable>
-    <UAObject ParentNodeId="ns=1;i=1011" NodeId="ns=1;i=5002" BrowseName="1:InputPorts">
+    <UAObject SymbolicName="InputPorts" ParentNodeId="ns=1;i=1011" NodeId="ns=1;i=5002" BrowseName="1:IP">
         <DisplayName>InputPorts</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -1548,7 +1548,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
         </References>
     </UAVariable>
-    <UAObject ParentNodeId="ns=1;i=1011" NodeId="ns=1;i=5003" BrowseName="1:OutputSignals">
+    <UAObject SymbolicName="OutputSignals" ParentNodeId="ns=1;i=1011" NodeId="ns=1;i=5003" BrowseName="1:Sig">
         <DisplayName>OutputSignals</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=80</Reference>
@@ -1709,7 +1709,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
         </References>
         <Value>
-            <uax:DateTime>2023-07-19T17:16:02Z</uax:DateTime>
+            <uax:DateTime>2023-11-01T13:49:16Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5010" NodeId="ns=1;i=6113" BrowseName="NamespaceUri">
@@ -1729,7 +1729,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
         </References>
         <Value>
-            <uax:String>3.0.0</uax:String>
+            <uax:String>3.0.1</uax:String>
         </Value>
     </UAVariable>
     <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5010" ValueRank="1" NodeId="ns=1;i=6115" ArrayDimensions="0" BrowseName="StaticNodeIdTypes">
