@@ -7,12 +7,12 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/esp" PublicationDate="2023-08-25T13:49:46Z" Version="3.0.1">
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/esp" PublicationDate="2023-11-03T10:58:29Z" Version="3.0.1">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2022-11-03T00:00:00Z" Version="1.04.0"/>
-            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-07-19T17:15:47Z" Version="3.0.0"/>
-            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-07-19T17:16:02Z" Version="3.0.0"/>
-            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/device" PublicationDate="2023-07-19T17:16:12Z" Version="3.0.0"/>
+            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-11-01T13:49:35Z" Version="3.0.1"/>
+            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-11-01T13:49:16Z" Version="3.0.1"/>
+            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/device" PublicationDate="2023-11-01T15:05:58Z" Version="3.0.1"/>
         </Model>
     </Models>
     <Aliases>
@@ -49,7 +49,7 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <ua:ModelInfo Tool="UaModeler" Hash="g2KgNGolB4VO3D/orPleYQ==" Version="1.6.9"/>
+            <ua:ModelInfo Tool="UaModeler" Hash="V1uMgrPuKrRh0hutVEJxpw==" Version="1.6.9"/>
         </Extension>
     </Extensions>
     <UADataType NodeId="ns=1;i=3008" BrowseName="1:PtpClockTypeEnumeration">
@@ -931,8 +931,72 @@
         <Description>The device uses its own internal clock</Description>
         <References>
             <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5013</Reference>
         </References>
     </UAObjectType>
+    <UAObject ParentNodeId="ns=1;i=1006" NodeId="ns=1;i=5013" BrowseName="1:Status">
+        <DisplayName>Status</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6101</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Int64" ParentNodeId="ns=1;i=5013" NodeId="ns=1;i=6101" BrowseName="1:State" AccessLevel="3">
+        <DisplayName>State</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6102</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6106</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6104</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5013</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Int64" ParentNodeId="ns=1;i=6101" NodeId="ns=1;i=6102" BrowseName="2:DefaultValue">
+        <DisplayName>DefaultValue</DisplayName>
+        <Description>Shows the default value of the variable.</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6101</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6103</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6102" NodeId="ns=1;i=6103" BrowseName="2:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6102</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt16" ParentNodeId="ns=1;i=6101" NodeId="ns=1;i=6106" BrowseName="2:NumberInList" AccessLevel="3">
+        <DisplayName>NumberInList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6101</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="SelectionEntryStructure" ParentNodeId="ns=1;i=6101" ValueRank="1" NodeId="ns=1;i=6104" ArrayDimensions="0" BrowseName="2:SelectionValues">
+        <DisplayName>SelectionValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6105</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6101</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6104" NodeId="ns=1;i=6105" BrowseName="2:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6104</Reference>
+        </References>
+    </UAVariable>
     <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:PTPSyncInterfaceType">
         <DisplayName>PTPSyncInterfaceType</DisplayName>
         <Description>Time is synchronized with a PTP grandmaster clock</Description>
@@ -1529,7 +1593,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5030</Reference>
         </References>
         <Value>
-            <uax:DateTime>2023-08-25T13:49:46Z</uax:DateTime>
+            <uax:DateTime>2023-11-03T10:58:29Z</uax:DateTime>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" ParentNodeId="ns=1;i=5030" NodeId="ns=1;i=6094" BrowseName="NamespaceUri">
