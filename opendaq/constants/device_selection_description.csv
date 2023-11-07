@@ -28,4 +28,8 @@ PtpType_Status_State;7;NotSet;Synchronization is not set, because the device is 
 DaqDeviceType_DeviceStatus;0;Booting;Device is booting and starting all services for running a measurement.
 DaqDeviceType_DeviceStatus;1;Operational;Device is ready to use for acquire measurement values.
 DaqDeviceType_DeviceStatus;2;Reconfiguration;A reconfiguration takes place. It is possible to acquire measurement values, but the reconfiguration procedure could impact it. The configuration change is only stored permanently on the device when it leaves this state.
-DaqDeviceType_DeviceStatus;3;Error;An internal error occurs. Device needs a reboot.
+DaqDeviceType_DeviceStatus;3;Error;An internal error occured. Device needs a reboot.
+SyncInterfaceType_Mode;0;Off;Off
+SyncInterfaceType_Mode;1;Auto;Auto
+SyncInterfaceType_Mode;2;In;In
+SyncInterfaceType_Mode;3;Out;Out
