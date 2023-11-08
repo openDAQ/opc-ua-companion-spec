@@ -57,6 +57,12 @@
         <opc:Field TypeName="opc:Int32" Name="NoOfParameters"/>
         <opc:Field LengthField="NoOfParameters" TypeName="ns1:DaqKeyValuePair" Name="Parameters"/>
     </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BaseRuleDescriptionStructure" Name="ExplicitDomainRuleDescriptionStructure">
+        <opc:Documentation>It should be used only if the "MinExepctedDelta" or "MaxExpectedDelta" is needed</opc:Documentation>
+        <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field TypeName="ua:Variant" Name="MinExpectedDelta"/>
+        <opc:Field TypeName="ua:Variant" Name="MaxExpectedDelta"/>
+    </opc:StructuredType>
     <opc:StructuredType BaseType="tns:BaseRuleDescriptionStructure" Name="ImplicitRuleDescriptionStructure">
         <opc:Documentation>Rules that are calculated</opc:Documentation>
         <opc:Field SourceType="tns:BaseRuleDescriptionStructure" TypeName="opc:CharArray" Name="Type"/>
