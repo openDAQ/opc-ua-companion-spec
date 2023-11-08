@@ -5,9 +5,9 @@
         <Uri>https://docs.opendaq.io/specifications/opc-ua/daq/bt</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-11-01T13:49:16Z" Version="3.0.1">
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bsp" PublicationDate="2023-11-01T13:49:16Z" Version="3.0.2">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
-            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-07-19T17:15:47Z" Version="3.0.0"/>
+            <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-07-19T17:15:47Z" Version="3.0.2"/>
         </Model>
     </Models>
     <Aliases>
@@ -1729,7 +1729,7 @@
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5010</Reference>
         </References>
         <Value>
-            <uax:String>3.0.1</uax:String>
+            <uax:String>3.0.2</uax:String>
         </Value>
     </UAVariable>
     <UAVariable DataType="IdType" ParentNodeId="ns=1;i=5010" ValueRank="1" NodeId="ns=1;i=6115" ArrayDimensions="0" BrowseName="StaticNodeIdTypes">
