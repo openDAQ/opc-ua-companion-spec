@@ -332,7 +332,7 @@
     </UAVariable>
     <UADataType NodeId="ns=1;i=3014" BrowseName="1:ExplicitDomainRuleDescriptionStructure">
         <DisplayName>ExplicitDomainRuleDescriptionStructure</DisplayName>
-        <Description>It should be used only if the "MinExepctedDelta" or "MaxExpectedDelta" is needed</Description>
+        <Description>It should be used only if the "MinExepctedDelta" or "MaxExpectedDelta" is needed.If only one is needed, the other should be set to 0. </Description>
         <References>
             <Reference ReferenceType="HasEncoding">ns=1;i=5020</Reference>
             <Reference ReferenceType="HasEncoding">ns=1;i=5029</Reference>
